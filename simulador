@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Movimiento de Partículas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="simulador">
+    <h1>Simulación de Movimiento de Partículas bajo Gravedad</h1>
+    <div id="controls">
+      <label for="mass1">Masa 1:</label>
+      <input type="range" id="mass1" min="1" max="100" value="50">
+      <br>
+      <label for="mass2">Masa 2:</label>
+      <input type="range" id="mass2" min="1" max="100" value="50">
+      <br>
+      <label for="distance">Distancia:</label>
+      <input type="range" id="distance" min="10" max="500" value="250">
+      <br>
+      <button id="startBtn">Iniciar Simulación</button>
+    </div>
+    <canvas id="simCanvas" width="800" height="600"></canvas>
+    <div id="chatbot">
+      <input type="text" id="userQuestion" placeholder="Haz una pregunta...">
+      <button onclick="askAI()">Pregunta IA</button>
+      <div id="aiResponse"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
